@@ -4,7 +4,6 @@ namespace Workshop_TecomNetways.Models
 {
     public class Location
     {
-
         public int ID { get; set;  }
 
         public string Country { get; set; }
@@ -19,6 +18,6 @@ namespace Workshop_TecomNetways.Models
 
         public virtual ContactUs ContactUs { get; set; }
 
-        public virtual ICollection<Event> Events { get; set; }
+        public virtual ICollection<Event> Events { get; set; } //**
     }
 }
