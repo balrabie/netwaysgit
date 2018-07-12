@@ -1,0 +1,11 @@
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\bin\Debug\netcoreapp2.1\dotnetcore.deps.json
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\bin\Debug\netcoreapp2.1\dotnetcore.runtimeconfig.json
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\bin\Debug\netcoreapp2.1\dotnetcore.runtimeconfig.dev.json
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\bin\Debug\netcoreapp2.1\dotnetcore.dll
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\netcoreapp2.1\dotnetcore.csprojAssemblyReference.cache
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\netcoreapp2.1\dotnetcore.csproj.CoreCompileInputs.cache
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\netcoreapp2.1\dotnetcore.RazorAssemblyInfo.cache
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\netcoreapp2.1\dotnetcore.RazorAssemblyInfo.cs
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\netcoreapp2.1\dotnetcore.AssemblyInfoInputs.cache
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\netcoreapp2.1\dotnetcore.AssemblyInfo.cs
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\netcoreapp2.1\dotnetcore.RazorTargetAssemblyInfo.cache
