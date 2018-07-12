@@ -4402,6 +4402,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
       }
     }
   },
@@ -11659,6 +11669,11 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -11667,6 +11682,7 @@
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.EntityFrameworkCore >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
+      "Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 3.0.0"
     ]
   },
@@ -11699,7 +11715,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Users\\bahid\\Desktop\\Netways\\Git Repository\\dotnetcore\\Services\\Services.csproj": {
+              "projectPath": "D:\\Users\\bahid\\Desktop\\Netways\\Git Repository\\dotnetcore\\Services\\Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

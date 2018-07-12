@@ -9,3 +9,9 @@ D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\ne
 D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\netcoreapp2.1\dotnetcore.AssemblyInfoInputs.cache
 D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\netcoreapp2.1\dotnetcore.AssemblyInfo.cs
 D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\netcoreapp2.1\dotnetcore.RazorTargetAssemblyInfo.cache
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\bin\Debug\netcoreapp2.1\dotnetcore.pdb
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\bin\Debug\netcoreapp2.1\Services.dll
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\bin\Debug\netcoreapp2.1\Services.pdb
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\netcoreapp2.1\dotnetcore.csproj.CopyComplete
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\netcoreapp2.1\dotnetcore.dll
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\dotnetcore\obj\Debug\netcoreapp2.1\dotnetcore.pdb
