@@ -1,0 +1,17 @@
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\bin\Debug\Tester.exe.config
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\bin\Debug\Tester.exe
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\bin\Debug\Tester.pdb
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\bin\Debug\AutoMapper.dll
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\bin\Debug\EntityFramework.dll
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\bin\Debug\System.ValueTuple.dll
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\bin\Debug\AutoMapper.pdb
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\bin\Debug\AutoMapper.xml
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\bin\Debug\EntityFramework.xml
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\bin\Debug\System.ValueTuple.xml
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\obj\Debug\Dummy.csprojAssemblyReference.cache
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\obj\Debug\Dummy.csproj.CoreCompileInputs.cache
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\obj\Debug\Dummy.csproj.CopyComplete
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\obj\Debug\Tester.exe
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\Tester\obj\Debug\Tester.pdb

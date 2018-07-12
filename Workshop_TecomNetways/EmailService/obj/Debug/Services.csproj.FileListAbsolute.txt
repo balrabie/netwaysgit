@@ -1,0 +1,11 @@
+C:\Users\bahid\source\repos\Workshop_TecomNetways\EmailService\bin\Debug\EmailService.dll
+C:\Users\bahid\source\repos\Workshop_TecomNetways\EmailService\bin\Debug\EmailService.pdb
+C:\Users\bahid\source\repos\Workshop_TecomNetways\EmailService\obj\Debug\Services.csproj.CoreCompileInputs.cache
+C:\Users\bahid\source\repos\Workshop_TecomNetways\EmailService\obj\Debug\EmailService.dll
+C:\Users\bahid\source\repos\Workshop_TecomNetways\EmailService\obj\Debug\EmailService.pdb
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\EmailService\bin\Debug\EmailService.dll
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\EmailService\bin\Debug\EmailService.pdb
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\EmailService\obj\Debug\Services.csprojAssemblyReference.cache
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\EmailService\obj\Debug\Services.csproj.CoreCompileInputs.cache
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\EmailService\obj\Debug\EmailService.dll
+C:\Users\bahid\source\repos\BahiAlRabie\Workshop_TecomNetways\EmailService\obj\Debug\EmailService.pdb
