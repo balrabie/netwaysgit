@@ -96,7 +96,7 @@ namespace dotnetcore.Controllers
             {
                 if (!OnlineParticipationRequestExists(id))
                 {
-                    return NotFound();
+                    return NotFound(); 
                 }
                 else
                 {
