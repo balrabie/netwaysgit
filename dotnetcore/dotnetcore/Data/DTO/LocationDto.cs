@@ -14,8 +14,5 @@
 
         public int ContactUsID { get; set; }
 
-        //public virtual ContactUs ContactUs { get; set; }
-
-        //public virtual ICollection<Event> Events { get; set; }
     }
 }

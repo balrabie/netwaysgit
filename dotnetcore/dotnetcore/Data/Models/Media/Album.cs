@@ -9,7 +9,7 @@ namespace dotnetcore.Data
 {
     public class Album : Item
     {
-        public byte[] CoverImage { get; set; }
+        public byte[] CoverImage { get; set; } 
 
         public string Details { get; set; }
         

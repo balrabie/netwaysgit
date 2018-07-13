@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -12,6 +13,7 @@ namespace dotnetcore.Data
         T Get(Expression<Func<T, bool>> predicate);
         Task<T> GetAsync(Expression<Func<T, bool>> predicate);
         void Add(T item);
-        void Delete(T item);       
+        void Delete(T item);
+        void ModifyEntryState(T item, EntityState state);
     }
 }

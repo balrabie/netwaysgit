@@ -42,5 +42,10 @@ namespace dotnetcore.Data
         {
             return await context.Set<T>().FirstOrDefaultAsync(predicate);
         }
+
+        public void ModifyEntryState(T item, EntityState state)
+        {
+            context.Entry(item).State = state;
+        }
     }
 }

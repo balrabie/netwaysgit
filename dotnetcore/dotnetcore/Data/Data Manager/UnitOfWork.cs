@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace dotnetcore.Data
 
             entities = new Context(
             new DbContextOptionsBuilder<Context>()
-            .UseSqlServer("Data Source=BAHIDR; Initial Catalog=simpledb3;Integrated Security=True")
+            .UseSqlServer(Startup.CONNECTION_STRING)
             .Options);
 
             repositories = new Dictionary<Type, object>();

@@ -9,13 +9,10 @@ namespace dotnetcore.Data
 {
     public class VideoDto : ItemDto
     {
-
         public string URL { get; set; }
 
         public string Description { get; set; }
 
         public DateTime PostingDate { get; set; }
-
-        //public virtual ICollection<VideoAlbum> VideoAlbums { get; set; }
     }
 }

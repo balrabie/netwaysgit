@@ -1,0 +1,16 @@
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\bin\Debug\netcoreapp2.1\Tester.deps.json
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\bin\Debug\netcoreapp2.1\Tester.runtimeconfig.json
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\bin\Debug\netcoreapp2.1\Tester.runtimeconfig.dev.json
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\bin\Debug\netcoreapp2.1\Tester.dll
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\bin\Debug\netcoreapp2.1\dotnetcore.dll
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\bin\Debug\netcoreapp2.1\Services.dll
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\bin\Debug\netcoreapp2.1\dotnetcore.pdb
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\bin\Debug\netcoreapp2.1\Services.pdb
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\obj\Debug\netcoreapp2.1\Tester.csprojAssemblyReference.cache
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\obj\Debug\netcoreapp2.1\Tester.csproj.CoreCompileInputs.cache
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\obj\Debug\netcoreapp2.1\Tester.AssemblyInfoInputs.cache
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\obj\Debug\netcoreapp2.1\Tester.AssemblyInfo.cs
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\obj\Debug\netcoreapp2.1\Tester.csproj.CopyComplete
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\bin\Debug\netcoreapp2.1\Tester.pdb
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\obj\Debug\netcoreapp2.1\Tester.dll
+D:\Users\bahid\Desktop\Netways\Git Repository\dotnetcore\Tester\obj\Debug\netcoreapp2.1\Tester.pdb
