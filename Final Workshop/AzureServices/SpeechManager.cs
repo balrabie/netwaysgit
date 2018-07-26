@@ -8,6 +8,6 @@ namespace AzureServices
 {
     public class SpeechManager
     {
-        // on hold: check
+        // on hold: check this later
     }
 }
