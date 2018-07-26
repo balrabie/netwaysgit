@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using AzureCognitiveServices.Models;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AzureServices
+namespace AzureCognitiveServices
 {
     /// <summary>
     /// Contains:
@@ -16,7 +17,7 @@ namespace AzureServices
     /// Reference for language codes:
     /// https://docs.microsoft.com/en-us/azure/cognitive-services/translator/languages
     /// </summary>
-    public class TextLanguageManager
+    public class TranslationManager
     {
         public string OriginalText { get; set; }
 
@@ -32,7 +33,7 @@ namespace AzureServices
                 return string.Empty;
             }
 
-            var json = await DetectLanguage();
+            JToken json = await DetectLanguage();
 
             return ExtractDetectedLanguage(json);
         }
@@ -43,16 +44,24 @@ namespace AzureServices
         /// </summary>
         /// <param name="languages">The languages.</param>
         /// <returns></returns>
-        public async Task<List<string>> GetTranslatedText(params string[] languages)
+        public async Task<TranslationDto> GetTranslation(params string[] languages)
         {
             if (OriginalText == string.Empty)
             {
-                return new List<string>();
+                return new TranslationDto();
             }
 
-            var json = await Translate(languages);
+            var jToken = await Translate(languages);
 
-            return ExtractTranslation(json);
+       
+
+            return new TranslationDto()
+            {
+                FromLanguage = (string)jToken[0]["detectedLanguage"]["language"],
+                ToLanguage = languages,
+                OriginalText = this.OriginalText,
+                TranslatedText = ExtractTranslationText(jToken).ToArray<string>()
+            };
         }
 
 
@@ -134,7 +143,7 @@ namespace AzureServices
         }
 
 
-        private List<string> ExtractTranslation(JToken jToken)
+        private List<string> ExtractTranslationText(JToken jToken)
         {
             var translations = (JArray)(jToken[0]["translations"]);
             List<string> result = new List<string>();

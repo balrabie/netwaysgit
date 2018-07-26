@@ -28,14 +28,19 @@ namespace ConsoleAppStd
         {
             Console.WriteLine("testing ConsoleAppStd:\n");
 
-            TestComputerVisionApi().Wait();
+            //TestComputerVisionApi().Wait();
 
-            TestFaceApi().Wait();
+            // TestFaceApi().Wait();
 
-            TestSpellChecker().Wait();
+            // TestSpellChecker().Wait();
 
-            TestBingSearchApi().Wait();
+            // TestBingSearchApi().Wait();
+
+            //VideoManager.testingVideoReaderONLY();
+
         }
+
+
 
         private static async Task TestSpellChecker()
         {
@@ -49,6 +54,7 @@ namespace ConsoleAppStd
 
             Console.WriteLine("TestSpellChecker: END\n");
         }
+
 
         private static async Task TestFaceApi()
         {

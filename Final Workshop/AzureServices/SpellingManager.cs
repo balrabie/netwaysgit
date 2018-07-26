@@ -21,6 +21,11 @@ namespace AzureServices
 
         private static string key = "bacce7d22b004f63a90ce2fe045f7e0c";
 
+        /// <summary>
+        /// Checks the spelling/grammar of the given text
+        /// </summary>
+        /// <param name="text">The text to be checked.</param>
+        /// <returns></returns>
         public static async Task<JToken> SpellCheck(string text)
         {
             HttpClient client = new HttpClient();
