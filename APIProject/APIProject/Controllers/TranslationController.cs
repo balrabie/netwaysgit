@@ -11,11 +11,14 @@ namespace APIProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TranslationController : ControllerBase
+    public class TextController : ControllerBase
     {
-        TranslationManager Manager = new TranslationManager();
+        TranslationManager TranslationManager = new TranslationManager();
 
-        // GET: api/Translation/DetectLanguage/{text}
+        SpellingManager SpellingManager = new SpellingManager();
+
+
+        // GET: api/Text/DetectLanguage/Text
         [HttpGet("DetectLanguage/{text}")]
         public async Task<ActionResult<string>> GetLanguage([FromRoute]string text)
         {
@@ -24,15 +27,15 @@ namespace APIProject.Controllers
                 return BadRequest();
             }
 
-            Manager.OriginalText = text;
+            TranslationManager.OriginalText = text;
 
-            var result = await Manager.GetDetectedLanguage();
+            var result = await TranslationManager.GetDetectedLanguage();
 
             return Ok(result);
         }
 
 
-        // Post: api/Translation
+        // Post: api/Text (acts as GET)
         [HttpPost("{text}")]
         public async Task<ActionResult<TranslationDto>> 
             GetLanguage([FromRoute]string text, [FromBody] string[] languages)
@@ -42,9 +45,26 @@ namespace APIProject.Controllers
                 return BadRequest();
             }
 
-            Manager.OriginalText = text;
+            TranslationManager.OriginalText = text;
 
-            var result = await Manager.GetTranslation();
+            var result = await TranslationManager.GetTranslation(languages);
+
+            return Ok(result);
+        }
+
+
+        // Post: api/CheckSpelling/Text (acts as GET)
+        [HttpGet("CheckSpelling/{text}")]
+        public async Task<ActionResult<SpellingDto>> CheckSpelling([FromRoute]string text)
+        {
+            if (text == null || text == string.Empty)
+            {
+                return BadRequest();
+            }
+
+            SpellingManager.Text = text;
+
+            var result = await SpellingManager.GetSuggestion();
 
             return Ok(result);
         }

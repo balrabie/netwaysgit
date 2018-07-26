@@ -56,7 +56,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\SpellingDto.cs" />
     <Compile Include="Models\TranslationDto.cs" />
+    <Compile Include="SpellingManager.cs" />
     <Compile Include="TranslationManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace AzureCognitiveServices
 {
+
     /// <summary>
     /// Contains:
     ///   1. Language detector
@@ -33,7 +35,7 @@ namespace AzureCognitiveServices
                 return string.Empty;
             }
 
-            JToken json = await DetectLanguage();
+            JToken json = await DetectLanguage(OriginalText);
 
             return ExtractDetectedLanguage(json);
         }
@@ -44,20 +46,19 @@ namespace AzureCognitiveServices
         /// </summary>
         /// <param name="languages">The languages.</param>
         /// <returns></returns>
-        public async Task<TranslationDto> GetTranslation(params string[] languages)
+        public async Task<TranslationDto> GetTranslation(string[] languages)
         {
             if (OriginalText == string.Empty)
             {
                 return new TranslationDto();
             }
 
-            var jToken = await Translate(languages);
-
-       
+            var jToken = await Translate(OriginalText,languages);
+  
 
             return new TranslationDto()
             {
-                FromLanguage = (string)jToken[0]["detectedLanguage"]["language"],
+                FromLanguage = (string)(jToken[0]["detectedLanguage"]["language"]),
                 ToLanguage = languages,
                 OriginalText = this.OriginalText,
                 TranslatedText = ExtractTranslationText(jToken).ToArray<string>()
@@ -70,11 +71,11 @@ namespace AzureCognitiveServices
         /// </summary>
         /// <param name="text">The text.</param>
         /// <returns></returns>
-        private async Task<JToken> DetectLanguage()
+        private static async Task<JToken> DetectLanguage(string text)
         {
             string path = "/detect?api-version=3.0";
             string uri = host + path;
-            System.Object[] body = new System.Object[] { new { Text = OriginalText } };
+            System.Object[] body = new System.Object[] { new { Text = text } };
             var requestBody = JsonConvert.SerializeObject(body);
 
             using (var client = new HttpClient())
@@ -102,7 +103,7 @@ namespace AzureCognitiveServices
         /// <param name="text">The input text.</param>
         /// <param name="languages">The desired languages.</param>
         /// <returns></returns>
-        private async Task<JToken> Translate(params string[] languages)
+        private async Task<JToken> Translate(string text, string[] languages)
         {
             string path = "/translate?api-version=3.0";
 
@@ -116,7 +117,7 @@ namespace AzureCognitiveServices
 
             string uri = host + path + params_;
 
-            System.Object[] body = new System.Object[] { new { Text = OriginalText } };
+            System.Object[] body = new System.Object[] { new { Text = text } };
             var requestBody = JsonConvert.SerializeObject(body);
 
             using (var client = new HttpClient())
@@ -161,4 +162,6 @@ namespace AzureCognitiveServices
 
         private static string key = "f29218f76b10455ca4eb0582432080b2";
     }
+
+
 }
