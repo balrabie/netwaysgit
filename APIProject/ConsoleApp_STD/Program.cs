@@ -15,11 +15,11 @@ namespace ConsoleApp_STD
 
         static void Main(string[] args)
         {
+            SearchManager sm = new SearchManager();
 
-            FaceManager fm = new FaceManager();
+            var result = sm.GetBingWebSearch("what is c hash").GetAwaiter().GetResult();
 
-            var result = fm.GetFaceDetection(PATH_2)
-                .GetAwaiter().GetResult();
+
         }
     }
 }

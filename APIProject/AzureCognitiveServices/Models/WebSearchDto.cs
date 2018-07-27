@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AzureCognitiveServices.Models_web
+namespace AzureCognitiveServices.Models
 {
 
     public class WebSearchDto

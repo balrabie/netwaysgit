@@ -63,12 +63,11 @@
     <Compile Include="ImageManager.cs" />
     <Compile Include="Models\FaceDto.cs" />
     <Compile Include="Models\ImageAnalysisDto.cs" />
-    <Compile Include="Models\ImageSearchDto.cs" />
     <Compile Include="Models\OCRDto.cs" />
     <Compile Include="Models\HandwritingDto.cs" />
     <Compile Include="Models\SpellingDto.cs" />
     <Compile Include="Models\TranslationDto.cs" />
-    <Compile Include="Models\SearchDto.cs" />
+    <Compile Include="Models\WebSearchDto.cs" />
     <Compile Include="SpellingManager.cs" />
     <Compile Include="TranslationManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
