@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace AzureCognitiveServices.Models
 {
-    public class SpellingDto
+    public class OCRDto
     {
-        public string Word { get; set; }
+        public string Language { get; set; }
 
-        public List<string> Suggestions { get; set; }
+        public List<string> Lines { get; set; }
     }
 }

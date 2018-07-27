@@ -42,7 +42,7 @@ namespace AzureCognitiveServices
                 spellingDtos.Add(new SpellingDto()
                 {
                     Word = word,
-                    Suggestions = suggestions.ToArray<string>()
+                    Suggestions = suggestions
                 });
             }
 

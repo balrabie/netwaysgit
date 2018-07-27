@@ -12,9 +12,9 @@ namespace AzureCognitiveServices.Models
 
         public string FromLanguage { get; set; }
 
-        public string[] ToLanguage { get; set; }
+        public List<string> ToLanguage { get; set; }
 
-        public string[] TranslatedText { get; set; }
+        public List<string> TranslatedText { get; set; }
 
     }
 }

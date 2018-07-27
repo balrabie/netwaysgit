@@ -13,21 +13,23 @@ namespace APIProject.Controllers
     [ApiController]
     public class TextController : ControllerBase
     {
+
+
         TranslationManager TranslationManager = new TranslationManager();
 
         SpellingManager SpellingManager = new SpellingManager();
 
 
         // GET: api/Text/DetectLanguage/Text
-        [HttpGet("DetectLanguage/{text}")]
-        public async Task<ActionResult<string>> GetLanguage([FromRoute]string text)
+        [HttpPost("LanguageDetection")]
+        public async Task<ActionResult<string>> GetLanguage([FromBody] Input input)
         {
-            if (text == null || text == string.Empty)
+            if (input.Text == null)
             {
                 return BadRequest();
             }
 
-            TranslationManager.OriginalText = text;
+            TranslationManager.OriginalText = input.Text;
 
             var result = await TranslationManager.GetDetectedLanguage();
 
@@ -35,34 +37,34 @@ namespace APIProject.Controllers
         }
 
 
-        // Post: api/Text (acts as GET)
-        [HttpPost("{text}")]
+        // Post: api/Text 
+        [HttpPost("Translation")]
         public async Task<ActionResult<TranslationDto>> 
-            GetLanguage([FromRoute]string text, [FromBody] string[] languages)
+            TranslateText([FromBody] TranslationInput translationInput)
         {
-            if (text == null || text == string.Empty || languages == null)
+            if (translationInput.Text == null  || translationInput.To == null)
             {
                 return BadRequest();
             }
 
-            TranslationManager.OriginalText = text;
+            TranslationManager.OriginalText = translationInput.Text;
 
-            var result = await TranslationManager.GetTranslation(languages);
+            var result = await TranslationManager.GetTranslation(translationInput.To);
 
             return Ok(result);
         }
 
 
-        // Post: api/CheckSpelling/Text (acts as GET)
-        [HttpGet("CheckSpelling/{text}")]
-        public async Task<ActionResult<SpellingDto>> CheckSpelling([FromRoute]string text)
+        // Post: api/CheckSpelling/Text 
+        [HttpPost("CheckSpelling")]
+        public async Task<ActionResult<SpellingDto>> CheckSpelling([FromBody] Input input)
         {
-            if (text == null || text == string.Empty)
+            if (input.Text == null)
             {
                 return BadRequest();
             }
 
-            SpellingManager.Text = text;
+            SpellingManager.Text = input.Text;
 
             var result = await SpellingManager.GetSuggestion();
 

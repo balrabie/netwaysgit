@@ -46,7 +46,7 @@ namespace AzureCognitiveServices
         /// </summary>
         /// <param name="languages">The languages.</param>
         /// <returns></returns>
-        public async Task<TranslationDto> GetTranslation(string[] languages)
+        public async Task<TranslationDto> GetTranslation(List<string> languages)
         {
             if (OriginalText == string.Empty)
             {
@@ -61,7 +61,7 @@ namespace AzureCognitiveServices
                 FromLanguage = (string)(jToken[0]["detectedLanguage"]["language"]),
                 ToLanguage = languages,
                 OriginalText = this.OriginalText,
-                TranslatedText = ExtractTranslationText(jToken).ToArray<string>()
+                TranslatedText = ExtractTranslationText(jToken)
             };
         }
 
@@ -103,7 +103,7 @@ namespace AzureCognitiveServices
         /// <param name="text">The input text.</param>
         /// <param name="languages">The desired languages.</param>
         /// <returns></returns>
-        private async Task<JToken> Translate(string text, string[] languages)
+        private async Task<JToken> Translate(string text, List<string> languages)
         {
             string path = "/translate?api-version=3.0";
 
