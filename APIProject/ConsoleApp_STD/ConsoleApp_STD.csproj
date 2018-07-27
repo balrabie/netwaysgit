@@ -53,6 +53,10 @@
       <Project>{6a212572-9a98-4c4c-8ee9-62404b751df0}</Project>
       <Name>AzureCognitiveServices</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary1%28dotnet%29\ClassLibrary1%28dotnet%29.csproj">
+      <Project>{674dc1b5-a78b-4374-818a-b3c78dd4815b}</Project>
+      <Name>ClassLibrary1%28dotnet%29</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

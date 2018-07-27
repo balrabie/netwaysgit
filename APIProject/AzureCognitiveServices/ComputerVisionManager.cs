@@ -137,7 +137,7 @@ namespace AzureCognitiveServices
         /// the Computer Vision REST API.
         /// </summary>
         /// <param name="byteData">The byte data of image file.</param>
-        private static async Task<JToken> AnalyzeImage(byte[] byteData)
+        public static async Task<JToken> AnalyzeImage(byte[] byteData)
         {
             try
             {

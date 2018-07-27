@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using templibrary;
 
 namespace ConsoleApp_STD
 {
@@ -15,10 +16,7 @@ namespace ConsoleApp_STD
 
         static void Main(string[] args)
         {
-            SearchManager sm = new SearchManager();
-
-            var result = sm.GetBingWebSearch("what is c hash").GetAwaiter().GetResult();
-
+            VideoManager.testingVideoReaderONLY();
 
         }
     }

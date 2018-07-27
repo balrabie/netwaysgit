@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace AzureCognitiveServices
 {
-    internal class ImageManager
+    public class ImageManager
     {
         /// <summary>
         /// Converts Images(Bitmap) to byte array.
