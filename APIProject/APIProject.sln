@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperApiNetFramework", "He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1(dotnet)", "ClassLibrary1(dotnet)\ClassLibrary1(dotnet).csproj", "{674DC1B5-A78B-4374-818A-B3C78DD4815B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppCore", "ConsoleAppCore\ConsoleAppCore.csproj", "{0A97D034-2B0C-4D97-9B68-48D4E0945486}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{674DC1B5-A78B-4374-818A-B3C78DD4815B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{674DC1B5-A78B-4374-818A-B3C78DD4815B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{674DC1B5-A78B-4374-818A-B3C78DD4815B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A97D034-2B0C-4D97-9B68-48D4E0945486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A97D034-2B0C-4D97-9B68-48D4E0945486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A97D034-2B0C-4D97-9B68-48D4E0945486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A97D034-2B0C-4D97-9B68-48D4E0945486}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

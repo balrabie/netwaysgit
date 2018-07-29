@@ -16,7 +16,15 @@ namespace ConsoleApp_STD
 
         static void Main(string[] args)
         {
-            VideoManager.testingVideoReaderONLY();
+            TextToSpeechManager textToSpeechManager = new TextToSpeechManager();
+
+            var result = textToSpeechManager
+                .GenerateSpeechWithDefaultSettings("This works! This works!", SpeakOut: true)
+                .GetAwaiter()
+                .GetResult();
+
+            Console.WriteLine(result.BytesData == null);
+
 
         }
     }
