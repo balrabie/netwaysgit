@@ -13,7 +13,7 @@ namespace HelperApiNetFramework.Controllers
 {
     public class SearchController : ApiController
     {
-        SearchManager Manager = new SearchManager();
+        private SearchManager Manager = new SearchManager();
 
         [Route("WebSearch/{query}")]
         [HttpPost]

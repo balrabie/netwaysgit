@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using templibrary;
+
 
 namespace ConsoleApp_STD
 {
@@ -12,19 +12,16 @@ namespace ConsoleApp_STD
     {
         const string PATH = "D:\\Users\\bahid\\Desktop\\Images\\handwriting.jpg";
         const string PATH_2 = "D:\\Users\\bahid\\Desktop\\Images\\harry-meghan-15.jpg";
+        const string wavpath = @"D:\Users\bahid\Desktop\whatstheweatherlike.wav";
 
 
         static void Main(string[] args)
         {
-            TextToSpeechManager textToSpeechManager = new TextToSpeechManager();
+            var manager = new SpeechToTextManager();
 
-            var result = textToSpeechManager
-                .GenerateSpeechWithDefaultSettings("This works! This works!", SpeakOut: true)
-                .GetAwaiter()
-                .GetResult();
+            var result = manager.RecognizeSpeechAsync(wavpath).GetAwaiter().GetResult();
 
-            Console.WriteLine(result.BytesData == null);
-
+            Console.WriteLine("------------------------------------------\n" + result.RecognizedText);
 
         }
     }
