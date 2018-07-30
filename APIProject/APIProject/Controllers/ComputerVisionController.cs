@@ -19,14 +19,14 @@ namespace APIProject.Controllers
         [HttpPost("OCR")]
         public async Task<ActionResult<OCRDto>> GetPrintedText([FromBody] Path path)
         {
-            if (path.TargetImage == null || path.TargetImage == string.Empty)
+            if (path.Target == null || path.Target == string.Empty)
             {
                 return BadRequest("Path is not valid");
             }
 
             try
             {
-                OCRDto result = await Manager.GetOCRText(path.TargetImage);
+                OCRDto result = await Manager.GetOCRText(path.Target);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -40,14 +40,14 @@ namespace APIProject.Controllers
         [HttpPost("Handwritten")]
         public async Task<ActionResult<HandwritingDto>> GetHandwriting([FromBody] Path path)
         {
-            if (path.TargetImage == null || path.TargetImage == string.Empty)
+            if (path.Target == null || path.Target == string.Empty)
             {
                 return BadRequest("Path is not valid");
             }
 
             try
             {
-                HandwritingDto result = await Manager.GetHandwrittenText(path.TargetImage);
+                HandwritingDto result = await Manager.GetHandwrittenText(path.Target);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -59,14 +59,14 @@ namespace APIProject.Controllers
         [HttpPost("Analysis")]
         public async Task<ActionResult<ImageAnalysisDto>> GetImageAnalysis([FromBody] Path path)
         {
-            if (path.TargetImage == null || path.TargetImage == string.Empty)
+            if (path.Target == null || path.Target == string.Empty)
             {
                 return BadRequest("Path is not valid");
             }
 
             try
             {
-                ImageAnalysisDto result = await Manager.GetImageAnalysis(path.TargetImage);
+                ImageAnalysisDto result = await Manager.GetImageAnalysis(path.Target);
                 return Ok(result);
             }
             catch (Exception ex)

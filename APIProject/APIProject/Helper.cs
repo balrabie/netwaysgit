@@ -21,7 +21,7 @@ namespace APIProject
 
     public struct Path
     {
-        public string TargetImage { get; set; }
+        public string Target { get; set; }
     }
 
 }

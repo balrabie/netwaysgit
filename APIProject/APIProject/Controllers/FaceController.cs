@@ -20,12 +20,12 @@ namespace APIProject.Controllers
         [HttpPost("Analysis")]
         public async Task<ActionResult<List<FaceDto>>> AnalyzeFace([FromBody] Path path)
         {
-            if (path.TargetImage == null)
+            if (path.Target == null)
             {
                 return BadRequest();
             }
             
-            var result = await Manager.GetFaceDetection(path.TargetImage);
+            var result = await Manager.GetFaceDetection(path.Target);
 
             return Ok(result);
         }
