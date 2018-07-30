@@ -77,6 +77,9 @@
     <Reference Include="Microsoft.CognitiveServices.Speech.csharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=d2e6dcccb609e663, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CognitiveServices.Speech.0.5.0\lib\net461\Microsoft.CognitiveServices.Speech.csharp.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -98,6 +101,10 @@
     <ProjectReference Include="..\AzureCognitiveServices\AzureCognitiveServices.csproj">
       <Project>{6a212572-9a98-4c4c-8ee9-62404b751df0}</Project>
       <Name>AzureCognitiveServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary1%28dotnet%29\ClassLibrary1%28dotnet%29.csproj">
+      <Project>{674dc1b5-a78b-4374-818a-b3c78dd4815b}</Project>
+      <Name>ClassLibrary1%28dotnet%29</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

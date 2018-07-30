@@ -1,4 +1,4 @@
-﻿using AzureCognitiveServices;
+using AzureCognitiveServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
